@@ -1478,3 +1478,299 @@
 [2020-03-12  17-07-59] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
 [2020-03-12  17-07-59] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/invest/prdOrder/saveAsync.htm HTTP/1.1" 200 41
 [2020-03-12  17-07-59] INFO [<module>: run_all.py,21],===================================测试结束==================================
+[2020-03-12  17-20-02] INFO [<module>: run_all.py,14],===================================测试开始==================================
+[2020-03-12  17-20-03] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-04] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,11],测试用例:'{'case_name': 'test_user_lend_nologin', 'url': 'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm', 'method': 'post', 'data': '{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}', 'expect_res': 21308.0}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,15],实际结果:'21308
+[2020-03-12  17-20-04] INFO [test_user_lend_normal: test_user_lend.py,25],((1204227320921542657, None, 'AS_ENABLED', 'N', 85174, 'ACT_INTEGRAL', None, Decimal('3600.00000000'), Decimal('3600.00000000'), Decimal('0E-8'), 0, None, None, 'N', '_SYSTEM_', datetime.datetime(2019, 12, 10, 10, 32, 21), '_SYSTEM_', datetime.datetime(2019, 12, 18, 18, 54, 59)), (1204227321043177474, None, 'AS_ENABLED', 'N', 85174, 'ACT_INTERNAL', None, Decimal('169013.97000000'), Decimal('45147.13000000'), Decimal('0E-8'), 0, None, None, 'N', '_SYSTEM_', datetime.datetime(2019, 12, 10, 10, 32, 21), '_SYSTEM_', datetime.datetime(2019, 12, 18, 18, 56, 10)))
+[2020-03-12  17-20-04] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-04] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,11],测试用例:'{'case_name': 'test_user_lend_normal', 'url': 'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm', 'method': 'post', 'data': '{"userId":"85174","token":"49e42d6f6b9a48b89d4cff03a86ea822","planProductId":"10243","investAmt":"100"}', 'expect_res': 23188.0}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"49e42d6f6b9a48b89d4cff03a86ea822","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,14],期望结果:'23188
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-04] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-04] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],KOI8-R Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],MacCyrillic Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM866 Russian confidence = 0.10239596314154911
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM855 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-7 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1253 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Bulgairan confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Bulgarian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],TIS-620 Thai confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-9 Turkish confidence = 0.3680784684402159
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_normal
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"49e42d6f6b9a48b89d4cff03a86ea822","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,14],期望结果:'23188
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-04] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-04] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],KOI8-R Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],MacCyrillic Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM866 Russian confidence = 0.10239596314154911
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM855 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-7 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1253 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Bulgairan confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Bulgarian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],TIS-620 Thai confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-9 Turkish confidence = 0.3680784684402159
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-04] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-04] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],KOI8-R Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],MacCyrillic Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM866 Russian confidence = 0.10239596314154911
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM855 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-7 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1253 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Bulgairan confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Bulgarian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],TIS-620 Thai confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-9 Turkish confidence = 0.3680784684402159
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_t
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-04] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-04] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],KOI8-R Russian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],MacCyrillic Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM866 Russian confidence = 0.10239596314154911
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],IBM855 Russian confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-7 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1253 Greek confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Bulgairan confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Bulgarian confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],TIS-620 Thai confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-9 Turkish confidence = 0.3680784684402159
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-04] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_three
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-04] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-04] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Russian confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],KOI8-R Russian confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Russian confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],MacCyrillic Russian confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],IBM866 Russian confidence = 0.10239596314154911
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],IBM855 Russian confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-7 Greek confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1253 Greek confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Bulgairan confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Bulgarian confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],TIS-620 Thai confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-9 Turkish confidence = 0.3680784684402159
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_four
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Russian confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],KOI8-R Russian confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Russian confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],MacCyrillic Russian confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],IBM866 Russian confidence = 0.10239596314154911
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],IBM855 Russian confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-7 Greek confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1253 Greek confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-5 Bulgairan confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1251 Bulgarian confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],TIS-620 Thai confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],ISO-8859-9 Turkish confidence = 0.3680784684402159
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],windows-1255 Hebrew confidence = 0.0
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],utf-8  confidence = 0.9690625
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],SHIFT_JIS Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-JP Japanese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],GB2312 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-KR Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],CP949 Korean confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],Big5 Chinese confidence = 0.01
+[2020-03-12  17-20-05] DEBUG [get_confidence: charsetgroupprober.py,100],EUC-TW Taiwan confidence = 0.01
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_five
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_normal
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"49e42d6f6b9a48b89d4cff03a86ea822","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'23188
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_t
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_three
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-05] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_four
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-05] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-05] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-06] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/plan/capitalOrder/save.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,11],测试用例:'test_user_lend_nologin_five
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/plan/capitalOrder/save.htm
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","planProductId":"10243","investAmt":"100"}
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-06] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-06] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/invest/prdOrder/saveAsync.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,11],测试用例:'{'case_name': 'test_user_reng_nologin', 'url': 'https://test.weiyangpuhui.com/if/invest/prdOrder/saveAsync.htm', 'method': 'post', 'data': '{"userId":"85174","token":"","prdClaimsId":"111883","investAmt":"100"}', 'expect_res': 21308.0}
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,12],url:'https://test.weiyangpuhui.com/if/invest/prdOrder/saveAsync.htm
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,13],data:'{"userId":"85174","token":"","prdClaimsId":"111883","investAmt":"100"}
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,14],期望结果:'21308
+[2020-03-12  17-20-06] INFO [test_case_logging: case_logs.py,15],实际结果:'{'msg': '用户未登录!', 'result': 21308}
+[2020-03-12  17-20-06] DEBUG [_new_conn: connectionpool.py,955],Starting new HTTPS connection (1): test.weiyangpuhui.com:443
+[2020-03-12  17-20-06] DEBUG [_make_request: connectionpool.py,428],https://test.weiyangpuhui.com:443 "POST /if/invest/prdOrder/saveAsync.htm HTTP/1.1" 200 41
+[2020-03-12  17-20-06] INFO [<module>: run_all.py,21],===================================测试结束==================================
