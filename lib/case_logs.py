@@ -1,5 +1,5 @@
 #coding=utf-8
-from config_logs import *
+from config.config_logs import *
 import json
 
 

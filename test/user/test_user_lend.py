@@ -1,10 +1,10 @@
 #coding=utf-8
 import unittest
 import requests
-from read_excel import *
-from case_logs import *
-from config_mysql import *
-from config_logs import *
+from lib.read_excel import *
+from lib.case_logs import *
+from config.config_mysql import *
+from config.config_logs import *
 import sys
 sys.path.append("../..")
 

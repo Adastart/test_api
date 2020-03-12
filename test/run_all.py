@@ -6,8 +6,6 @@ import sys
 sys.path.append('/Users/aoxing/PycharmProjectsa')
 print(sys.path)
 
-from config_logs import *
-from HTMLTestReportCN import HTMLTestRunner
 from config.config_logs import *
 from lib.HTMLTestReportCN import HTMLTestRunner
 

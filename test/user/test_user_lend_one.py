@@ -1,8 +1,8 @@
 #coding=utf-8
-from case_logs import *
-from read_excel import *
+from lib.case_logs import *
+from lib.read_excel import *
 import unittest
-from config_logs import *
+from config.config_logs import *
 import sys
 sys.path.append("../..")
 

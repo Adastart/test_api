@@ -1,9 +1,9 @@
 #coding=utf-8
 import unittest
-from case_logs import *
+from lib.case_logs import *
 import requests
-from read_excel import *
-from config_logs import *
+from lib.read_excel import *
+from config.config_logs import *
 import sys
 sys.path.append("../..")
 
