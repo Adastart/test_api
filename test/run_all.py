@@ -1,10 +1,15 @@
 #coding=utf-8
 import unittest
-from HTMLTestReportCN import *
 import logging
 import sys
-sys.path.append('..')
+#sys.path.append('../')
+sys.path.append('/Users/aoxing/PycharmProjectsa')
+print(sys.path)
+
 from config_logs import *
+from HTMLTestReportCN import HTMLTestRunner
+from config.config_logs import *
+from lib.HTMLTestReportCN import HTMLTestRunner
 
 
 
