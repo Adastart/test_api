@@ -28,6 +28,17 @@ mysql_user=''
 mysql_passwd=''
 mysql_name=''
 
+
+
+
+#邮件配置
+sender_user = '15701374212@163.com'     #发件人邮箱
+sender_passwd = '1351668Ao'             #发件人客户端授权码
+receivers = '1064420684@qq.com'         #收件人邮箱
+smtp_ssl_server = 'smtp.163.com'        #发件人服务器地址
+subject = '接⼝测试报告'                  #邮件主题
+
+
 if __name__=='__main__':
     logging.info("hellow")
 
