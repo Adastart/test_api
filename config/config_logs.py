@@ -13,15 +13,15 @@ test_path=os.path.join(prj_path,'test')
 
 log_file=os.path.join(prj_path,'log','log.txt')
 report_file=os.path.join(prj_path,'report',nowtime+' Report.html')
-
+with open(log_file,mode='w') as e:
+    print(str(e))
 logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(levelname)s [%(funcName)s: %(filename)s,%(lineno)d],%(message)s',
                     datefmt='%Y-%m-%d  %H-%M-%S',
                     filename=log_file,
                     filemode='a'
                     )
-with open(log_file,mode='r') as e:
-    print(str(e))
+
 
 mysql_host=''
 mysql_port=''
