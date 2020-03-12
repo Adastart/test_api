@@ -20,6 +20,9 @@ logging.basicConfig(level=logging.DEBUG,
                     filename=log_file,
                     filemode='a'
                     )
+with open(log_file,mode='r') as e:
+    print(str(e))
+
 mysql_host=''
 mysql_port=''
 mysql_user=''
