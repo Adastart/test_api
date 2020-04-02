@@ -1,8 +1,7 @@
 #coding=utf-8
 import unittest
-import logging
 import sys
-#sys.path.append('../')
+sys.path.append('../..')
 sys.path.append('/Users/aoxing/PycharmProjectsa')
 print(sys.path)
 
