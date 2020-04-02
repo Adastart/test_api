@@ -58,6 +58,7 @@ def exit_prd(userid,token):
         print(res_exit.text)
     return  print(res_exit.text)
     logging.info(res_exit.text)
+
 if __name__=='__main__':
     exit_prd(userid='85175',
-             token='2f9f6003bbc34d8c866e87cd11d4adc2')
+             token='e86aae6c55a7415287f64f7841e2c5c4')

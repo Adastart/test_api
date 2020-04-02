@@ -4,7 +4,7 @@ import json
 
 
 
-def test_case_logging(case_name,url,data,excepct_res,response_text):
+def test_case_logging(case_name,url,data,excepct_res,response,res):
     if isinstance(data,dict):
         data=json.dumps(data,ensure_ascii=False)
 
@@ -12,5 +12,6 @@ def test_case_logging(case_name,url,data,excepct_res,response_text):
     logging.info("url:'{}".format(url))
     logging.info("data:'{}".format(data))
     logging.info("期望结果:'{}".format(excepct_res))
-    logging.info("实际结果:'{}".format(response_text))
+    logging.info("实际结果:'{}".format(response['result']))
+    logging.info("实际结果所有信息:'{}".format(res))
 

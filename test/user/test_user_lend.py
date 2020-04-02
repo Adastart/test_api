@@ -5,8 +5,8 @@ from lib.read_excel import *
 from lib.case_logs import *
 from config.config_mysql import *
 from config.config_logs import *
-from test.user.test import exit_prd
 import json
+from test.user.test_exit_prdID import exit_prd
 import sys
 sys.path.append("../..")
 
@@ -25,8 +25,8 @@ class Test_User_Lend(unittest.TestCase):
     def setUp(self):
         pass
     def tearDown(self):
-        exit_prd(userid='85175',
-                 token='2f9f6003bbc34d8c866e87cd11d4adc2')
+        self.exit_id=exit_prd(userid='85175',
+                 token='e86aae6c55a7415287f64f7841e2c5c4')
 
     def test_user_lend_normal(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_normal')
@@ -42,8 +42,8 @@ class Test_User_Lend(unittest.TestCase):
 
         res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_nologin(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_nologin')
@@ -59,8 +59,8 @@ class Test_User_Lend(unittest.TestCase):
         expect_res = int(case_data.get('expect_res'))
         res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_noPlanPrdId(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_noPlanPrdId')
@@ -70,12 +70,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_noInvestAmt(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_noInvestAmt')
@@ -85,12 +87,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
 
     def test_user_lend_nocouponType(self):
@@ -101,12 +105,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_wrongPrdId(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_wrongPrdId')
@@ -116,12 +122,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_wrongcouponID_value(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_wrongcouponID_value')
@@ -131,12 +139,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
 
     def test_user_lend_minInvestAmt(self):
@@ -147,12 +157,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_maxInvestAmt(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_maxInvestAmt')
@@ -162,12 +174,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
 
     def test_user_lend_noSigning(self):
@@ -178,12 +192,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_norisk(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_norisk')
@@ -193,12 +209,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_descParameter(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_descParameter')
@@ -208,12 +226,14 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])
 
     def test_user_lend_nocouponIdType(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_nocouponIdType')
@@ -223,9 +243,11 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
-        test_case_logging(case_data,url,data,expect_res,response)
-        self.assertEqual(response['result'],expect_res)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
+        self.assertEqual(expect_res,response['result'])

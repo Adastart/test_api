@@ -33,7 +33,7 @@ class test_case(unittest.TestCase):
         response=res.json()
 
         self.assertEqual(expect_res,response['result'])
-        test_case_logging(case_data,url,data,expect_res,response)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
 
     def test_prd_list_nologin(self):
         case_data = get_excel_case_data(self.data_list, 'test_prd_list_nologin')
@@ -50,7 +50,7 @@ class test_case(unittest.TestCase):
         response = res.json()
 
         self.assertEqual(expect_res, response['result'])
-        test_case_logging(case_data, url, data, expect_res, response)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
 
     def test_prd_list_nouserId(self):
         case_data = get_excel_case_data(self.data_list, 'test_prd_list_nouserId')
@@ -67,7 +67,7 @@ class test_case(unittest.TestCase):
         response = res.json()
 
         self.assertEqual(expect_res, response['result'])
-        test_case_logging(case_data, url, data, expect_res, response)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
 
     def test_prd_list_wrongstatus(self):
         case_data = get_excel_case_data(self.data_list, 'test_prd_list_wrongstatus')
@@ -84,5 +84,5 @@ class test_case(unittest.TestCase):
         response = res.json()
 
         self.assertEqual(expect_res, response['result'])
-        test_case_logging(case_data, url, data, expect_res, response)
+        test_case_logging(case_data,url,data,expect_res,response,res.text)
 
