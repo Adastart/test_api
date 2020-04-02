@@ -5,6 +5,8 @@ from lib.read_excel import *
 from lib.case_logs import *
 from config.config_mysql import *
 from config.config_logs import *
+from test.user.test import exit_prd
+import json
 import sys
 sys.path.append("../..")
 
@@ -15,9 +17,16 @@ class Test_User_Lend(unittest.TestCase):
         cls.db=DB()
         cls.data_list=read_excel_data_list(os.path.join(data_path,'test_user_data.xlsx'),"Test_User_Lend")
 
+
     @classmethod
     def tearDownClass(cls):
         pass
+
+    def setUp(self):
+        pass
+    def tearDown(self):
+        exit_prd(userid='85175',
+                 token='2f9f6003bbc34d8c866e87cd11d4adc2')
 
     def test_user_lend_normal(self):
         case_data=get_excel_case_data(self.data_list,'test_user_lend_normal')
@@ -28,9 +37,10 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
-        print(data)
+        data_dict=json.loads(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
         test_case_logging(case_data,url,data,expect_res,response)
         self.assertEqual(response['result'],expect_res)
@@ -43,9 +53,11 @@ class Test_User_Lend(unittest.TestCase):
             return ('用例不存在')
         url=case_data.get('url')
         data = case_data.get('data')
+        data_dict=json.loads(data)
+
         print(data)
         expect_res = int(case_data.get('expect_res'))
-        res=requests.post(url=url,data=data)
+        res=requests.post(url=url,data=data_dict)
         response=res.json()
         test_case_logging(case_data,url,data,expect_res,response)
         self.assertEqual(response['result'],expect_res)
